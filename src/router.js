@@ -16,7 +16,10 @@ const routes = [
     { path: "/", component: Index },
     { path: "/detail", component: Detail },
     { path: "/detail2", component: Detail2 },
-    { path: "/nutui", component: Nutui }
+    { path: "/nutui", component: Nutui },
+    { path: "/calculator", component: () => import("./view/calculator.vue") },
+    { path: "/add", component: () => import("./view/add1.vue") },
+    { path: "/sub", component: () => import("./view/sub1.vue") }
 ];
 
 const router = new VueRouter({

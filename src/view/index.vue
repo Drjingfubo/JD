@@ -14,8 +14,14 @@
                 <a href="https://www.npmjs.com/package/gaea-cli" class="btn">
                     NPM
                 </a>
-                <router-link to="/detail" class="btn btn-start">
-                    起步
+                <router-link to="/add" class="btn btn-start">
+                    加详情
+                </router-link>
+                <router-link to="/sub" class="btn btn-start">
+                    减详情
+                </router-link>
+                <router-link to="/calculator" class="btn btn-start">
+                    荆福博的vuex
                 </router-link>
             </p>
             <div class="jdc-logo"><s></s></div>
@@ -44,7 +50,6 @@ export default {
         for (let a of m) {
             console.log(a);
         }
-        this.add(3);
     },
     destroyed() {},
     methods: {}
@@ -97,22 +102,21 @@ export default {
     height: 68px;
     background-size: 100% 100%;
 }
-.jdc-logo{
+.jdc-logo {
     text-align: center;
-    margin-top:4rem;
-    s{
+    margin-top: 4rem;
+    s {
         display: inline-block;
-        height:0.24rem;
-        width:1.15rem;
-        background:url('../asset/img/logo.png') 0 0 no-repeat;
-        background-size:100% 100%;
-
+        height: 0.24rem;
+        width: 1.15rem;
+        background: url("../asset/img/logo.png") 0 0 no-repeat;
+        background-size: 100% 100%;
     }
 }
-.webp .jdc-logo{
-    s{
-        background:url('../asset/img/webp/logo.webp') 0 0 no-repeat;
-        background-size:100% 100%;
+.webp .jdc-logo {
+    s {
+        background: url("../asset/img/webp/logo.webp") 0 0 no-repeat;
+        background-size: 100% 100%;
     }
 }
 </style>

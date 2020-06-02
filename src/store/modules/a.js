@@ -1,6 +1,7 @@
 // 全局状态管理的地方
 const state = {
-    num: 0
+    num: 0,
+    count: 0
 };
 
 // 简单处理state的地方
@@ -17,6 +18,18 @@ const getters = {
         return {
             num
         };
+    },
+    reverse: (state, getters, rootState) => {
+        let count = 0;
+        if (state.count != 0) {
+            count = state.count * -1;
+        } else {
+            count = state.count;
+        }
+
+        return {
+            count
+        };
     }
 };
 
@@ -29,6 +42,16 @@ const actions = {
             let total = multiple * increaseNum;
             commit("INCREASE", total);
         }, 300);
+    },
+    add: ({ commit, state }, addnum) => {
+        setTimeout(() => {
+            commit("ADD", addnum);
+        }, 1000);
+    },
+    sub: ({ commit, state }, subnum) => {
+        setTimeout(() => {
+            commit("SUB", subnum);
+        }, 1000);
     }
 };
 
@@ -37,6 +60,12 @@ const mutations = {
     INCREASE: (state, total) => {
         console.log(total);
         state.num += total;
+    },
+    ADD: (state, addnum) => {
+        state.count += addnum;
+    },
+    SUB: (state, subnum) => {
+        state.count -= subnum;
     }
 };
 
