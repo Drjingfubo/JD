@@ -19,7 +19,9 @@ const routes = [
     { path: "/nutui", component: Nutui },
     { path: "/calculator", component: () => import("./view/calculator.vue") },
     { path: "/add", component: () => import("./view/add1.vue") },
-    { path: "/sub", component: () => import("./view/sub1.vue") }
+    { path: "/sub", component: () => import("./view/sub1.vue") },
+    { path: "/dialog", component: () => import("./view/dialog.vue") },
+    { path: "/tab", component: () => import("./view/tab.vue") }
 ];
 
 const router = new VueRouter({

@@ -8,12 +8,12 @@
                 Vue技术栈单页面构建工具
             </p>
             <p class="link">
-                <a href="https://github.com/jdf2e/Gaea4" class="btn">
+                <!-- <a href="https://github.com/jdf2e/Gaea4" class="btn">
                     GITHUB
                 </a>
                 <a href="https://www.npmjs.com/package/gaea-cli" class="btn">
                     NPM
-                </a>
+                </a> -->
                 <router-link to="/add" class="btn btn-start">
                     加详情
                 </router-link>
@@ -22,6 +22,9 @@
                 </router-link>
                 <router-link to="/calculator" class="btn btn-start">
                     荆福博的vuex
+                </router-link>
+                <router-link to="/dialog" class="btn btn-start">
+                    dialog
                 </router-link>
             </p>
             <div class="jdc-logo"><s></s></div>
