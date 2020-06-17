@@ -26,6 +26,15 @@
                 <router-link to="/dialog" class="btn btn-start">
                     dialog
                 </router-link>
+                <router-link to="/jokelist" class="btn btn-start">
+                    jokelist
+                </router-link>
+                <router-link to="/login" class="btn btn-start">
+                    登录
+                </router-link>
+                <router-link to="/register" class="btn btn-start">
+                    注册
+                </router-link>
             </p>
             <div class="jdc-logo"><s></s></div>
         </div>
@@ -61,7 +70,7 @@ export default {
 
 <style lang="scss" scoped>
 .wrapper {
-    padding: 20px 10px;
+    // padding: 20px 10px;
     font-size: 12px;
     a {
         color: #333;

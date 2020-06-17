@@ -214,7 +214,24 @@ module.exports = (env, argv) => {
             // host:'192.168.191.2',
             // port:8080,
             compress: true,
-            historyApiFallback: true
+            disableHostCheck: true,
+            historyApiFallback: true,
+            proxy: {
+                "/api": {
+                    target: `http://api.baxiaobu.com/index.php/home/v1`,
+                    changeOrigin: true,
+                    pathRewrite: {
+                        "^/api": ""
+                    }
+                },
+                "/egj": {
+                    target: `https://api.apiopen.top`,
+                    changeOrigin: true,
+                    pathRewrite: {
+                        "^/egj": ""
+                    }
+                }
+            }
         };
     }
 

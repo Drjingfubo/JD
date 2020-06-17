@@ -21,7 +21,11 @@ const routes = [
     { path: "/add", component: () => import("./view/add1.vue") },
     { path: "/sub", component: () => import("./view/sub1.vue") },
     { path: "/dialog", component: () => import("./view/dialog.vue") },
-    { path: "/tab", component: () => import("./view/tab.vue") }
+    { path: "/tab", component: () => import("./view/tab.vue") },
+    { path: "/login", component: () => import("./view/login/login.vue") },
+    { path: "/register", component: () => import("./view/register/register.vue") },
+    { path: "/jokelist", component: () => import("./view/joke/joke_list.vue") },
+    { path: "/jokedetail", component: () => import("./view/joke/joke_detail.vue") }
 ];
 
 const router = new VueRouter({

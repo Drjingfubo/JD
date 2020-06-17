@@ -125,30 +125,33 @@ export default {
 b {
     animation: moving 2s infinite;
 }
-</style>
-<style>
-.nut-tab-item {
+/deep/ .nut-title-nav-scroll {
+    min-width: 1.61rem;
+    min-height: 1.61rem;
+    max-width: 1.61rem;
+}
+/deep/ .nut-tab-item {
     overflow: hidden;
 }
-img {
+/deep/ img {
     /* max-height: 10rem; */
     width: 100%;
     height: auto;
 }
-.nut-tab-item {
+/deep/ .nut-tab-item {
     height: auto;
 }
-.nut-tab-title-bottomnav {
+/deep/ .nut-tab-title-bottomnav {
     height: 2.2rem;
     background: #cacaf9;
     border: 2px solid black;
     padding: 0 0 0 0.5rem;
 }
-.nut-tab-icon {
+/deep/ .nut-tab-icon {
     width: 1.61rem;
     height: 1.61rem;
 }
-.nut-tab-title-bottomnav .nav-bar-bottom {
+/deep/ .nut-tab-title-bottomnav .nav-bar-bottom {
     position: absolute;
     height: 0.33rem;
     left: 74px;
@@ -161,12 +164,7 @@ img {
     transition: all 0.3s ease-in-out;
     background-size: 100%;
 }
-.nut-title-nav-scroll {
+/deep/ .nut-title-nav-scroll {
     background: #cacaf9;
-}
-.nut-title-nav-scroll {
-    min-width: 1.61rem;
-    min-height: 1.61rem;
-    max-width: 1.61rem;
 }
 </style>

@@ -10,3 +10,10 @@ webpack 模版
 ### 本次作业介绍
 * 使用的组件  Dialog Toast Tab Textinput Button
 * 点击输入名字以后，弹出dialog 点击确定（已经输入内容，如果没输入，就会提示请输入名字）会跳转到tab页面 在tab页面可以点击下方栏进入不同的tab选项栏。
+
+### 第三周作业
+* view中新增四个vue文件 ，其中joke是笑话的文件夹，其中包含列表页（可以下滑到底部加载下一页）和详情页，login是登录，register是注册。
+* 新增utils文件，其中是axios的封装
+* 新增api文件，其中是joke和login的接口
+* webpack.config.js中新增proxy配置
+
